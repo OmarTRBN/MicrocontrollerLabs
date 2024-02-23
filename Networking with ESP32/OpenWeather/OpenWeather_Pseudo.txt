@@ -1,0 +1,25 @@
+Lab2 : Hava durumu
+
+ssid = "ssid"
+password = "sifre"
+URL = api url'i + token + enlem + boylam
+
+Setup:
+    lcd ekranini baslat      
+    WiFi'ye ssid ve sifre ile baglan
+
+Döngü:
+    // WiFi bağlantısı bekleniyor
+    eğer (wifi'ye baglanmis ise)
+
+        HTTPİstemcisi http
+        http.başla(URL)
+        http request atilir
+
+        eğer (httpKodu basirili ise)
+            String JSON_Verisi = http.getString()
+    JSON'dan istenen bilgiler alinir
+            lcd'ye gerekli bilgiler yazdirilir
+        
+        http.son()
+    30 saniye bekle

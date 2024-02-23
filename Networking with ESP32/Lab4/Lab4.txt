@@ -1,0 +1,21 @@
+ssid = "";
+password = "";
+Lokal Sunucu olustur
+
+Setup:
+    Serial ekran baslat
+    Wifi'ye baglan 
+    Lokal sunucunun IP adresine yazdir
+
+Dongu:
+    Istemci cevrim ici oldugu surece:
+        HTML sayfasini olustur
+        EGER istemci '/i' sayfasina git isterse:
+            Arabayi ilerlet
+        EGER istemci '/a' sayfasina git isterse:
+            Arabayi saga dondur
+        EGER istemci '/o' sayfasina git isterse:
+            Arabayi sola dondur
+        EGER istemci '/g' sayfasina git isterse:
+            Arabayi geri hareket ettir
+    

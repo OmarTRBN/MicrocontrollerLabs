@@ -1,0 +1,29 @@
+ssid = ssid
+password = sifre
+
+URL1 = weather_api + enlem + boylam + token
+URL2 = thingspeak + token + kanal
+
+Setup:
+    Wifi'ye baglan 
+
+Döngü:
+    Sicaklik sensor verisini oku
+
+    eğer (wifi'ye baglanmis ise)
+        HTTPİstemcisi http1
+        HTTPİstemcisi http2
+        http1.başla(URL1)
+        http2.başla(URL2)
+        http1 istek gonder
+        
+        eğer (httpKodu basirili ise)
+            String JSON_Verisi = http.getString()
+            sicaklik = JSON'dan sicaklik bilgisi alinir
+            fark = sicaklik - sensorVerisi
+            http2 sicaklik verilerini istek atar
+
+        http1.son()
+        http2.son()
+        
+    10 saniye bekle

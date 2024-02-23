@@ -1,0 +1,27 @@
+Sunucu ESP32’nin programı:
+
+ssid = "";
+password = "";
+Sunucu olustur
+
+Setup:
+    Wifi'ye baglan 
+    "/selamunaleykum" sayfasina HTTP istek geldiginde "Aleykümselam , naber ?" cevabi verir
+    Sunucuyu başlat
+
+##########################################
+
+Istemci ESP32'nin programı
+
+ssid = "";
+password = "";
+Setup:
+    Serial baslat
+    Wifi'ye baglan 
+
+Dongu:
+    HTTP sunucu ip adresine istek gonderir
+    Gelen cevabi serial ekrana yazdirsin
+    // Server'ın IP adresini ve portunu belirt
+    EGER cevap_indexi esittir "naber"
+        Ekrana "İyidir senden." yazsin
